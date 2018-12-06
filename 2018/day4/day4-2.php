@@ -55,11 +55,14 @@ foreach ($minutesSleeping as $guard => $sleepMinute) {
     // Get the actual minute
     $minuteMostSlept = array_search($amountSleeping, $sleepMinute);
 
+    // Add to dataset
     $timesMostSpentSleeping[$guard] = $amountSleeping;
     $minutesMostSpentSleeping[$guard] = $minuteMostSlept;
 }
 
+// Get guard most frequently sleeping
 $guardMostFrequentlySleeping = array_search(max($timesMostSpentSleeping), $timesMostSpentSleeping);
+// Get the minute the guard most frequently slept on
 $minuteMostSpentSleeping = $minutesMostSpentSleeping[$guardMostFrequentlySleeping];
 
 echo "Guard $guardMostFrequentlySleeping slept most at minute $minuteMostSpentSleeping, result ". $guardMostFrequentlySleeping * $minuteMostSpentSleeping ."\n";
