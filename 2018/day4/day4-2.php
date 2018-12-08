@@ -65,6 +65,6 @@ $guardMostFrequentlySleeping = array_search(max($timesMostSpentSleeping), $times
 // Get the minute the guard most frequently slept on
 $minuteMostSpentSleeping = $minutesMostSpentSleeping[$guardMostFrequentlySleeping];
 
-echo "Guard $guardMostFrequentlySleeping slept most at minute $minuteMostSpentSleeping, result ". $guardMostFrequentlySleeping * $minuteMostSpentSleeping ."\n";
+echo "Guard $guardMostFrequentlySleeping slept most, especially at minute $minuteMostSpentSleeping, result ". $guardMostFrequentlySleeping * $minuteMostSpentSleeping ."\n";
 
-//Guard 2081 slept most at minute 24, result 49944
+//Guard 2081 slept most, especially at minute 24, result 49944
