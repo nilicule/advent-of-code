@@ -136,3 +136,5 @@ migrations/versions/*.py
 # AI
 .claude
 
+# Advent of Code
+**/bin/
